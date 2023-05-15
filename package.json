@@ -1,0 +1,27 @@
+{
+  "name": "@zatsunenomokou/tools",
+  "version": "0.0.1",
+  "main": "src/index.js",
+  "files": [
+    "src/disk-usage.js",
+    "src/index.js"
+  ],
+  "type": "module",
+  "types": "src/index.d.ts",
+  "license": "GPLv3",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "scripts": {
+    "build": "tsc --build --clean && tsc --build",
+    "watch": "tsc --build --clean && tsc --watch"
+  },
+  "devDependencies": {
+    "@types/node": "^16.18.30",
+    "@types/node-fetch": "^3.0.3",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "node-fetch": "^3.1.0"
+  }
+}

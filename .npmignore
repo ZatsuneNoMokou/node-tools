@@ -1,0 +1,10 @@
+**/*.ts
+!**/*.d.ts
+!**/*.js
+!**/*.map
+!yarn.lock
+/.idea
+/LICENSE
+/README.md
+/tsconfig.json
+.gitignore

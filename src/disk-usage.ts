@@ -17,10 +17,10 @@ export interface DiskUsageItem {
 
 /**
  * Parse result from linux "du" command, filtering intermediate directories
- * @param from
- * @param depth
+ * @param from Start point of the du command
+ * @param depth Depth parameter of du command
  */
-export async function listPathSizes(from:string='.', depth?:number): Promise<DiskUsageItem[]> {
+export async function diskUsage(from:string='.', depth?:number): Promise<DiskUsageItem[]> {
 	from = path.resolve(process.cwd(), from);
 	const args = [
 		'-0'

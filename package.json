@@ -3,11 +3,12 @@
   "version": "0.0.1",
   "main": "src/index.js",
   "files": [
-    "src/disk-usage.js",
-    "src/index.js"
+    "**/*.d.ts",
+    "**/*.js",
+    "**/*.map"
   ],
   "type": "module",
-  "types": "src/index.d.ts",
+  "types": "./src/index.d.ts",
   "license": "GPLv3",
   "engines": {
     "node": ">=16.0.0"
